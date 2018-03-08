@@ -1,0 +1,158 @@
+/* header section */
+
+
+/*#clicker {
+    'display: none;
+} */
+
+
+/*.auto-pop-main{
+  display: none;
+} */
+
+#exitboi {
+    display: none;
+}
+
+#autopop-inner {
+    width: 150px;
+    height: 130px;
+    background-color: lavender;
+    border: solid;
+    border-color: grey;
+    border-width: 3px;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    right: 400px;
+    display: none;
+}
+
+.text {
+    padding-left: 8px;
+}
+
+.video-background {
+    z-index: -99;
+}
+
+#masterhead {
+    background-color: black;
+    background-size: 100%;
+    max-width: 1300px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    padding: 0 8px 0 0;
+}
+
+.item1 {
+    display: inline-flex;
+    padding: 0 2.5px 0 2.5px;
+    flex-direction: row;
+}
+
+.item2 {
+    display: inline-flex;
+    padding: 0 2.5px 0 2.5px;
+    flex-direction: row;
+}
+
+.item3 {
+    display: inline-flex;
+    padding: 0 2.5px 0 2.5px;
+    flex-direction: row;
+}
+
+.item4 {
+    display: inline-flex;
+    padding: 0 2.5px 0 2.5px;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500px;
+}
+
+a:link {
+    color: #fff;
+}
+
+a:visited {
+    color: lightgrey;
+}
+
+a:hover {
+    color: grey;
+    font-size: 20px;
+}
+
+a:active {
+    color: lightblue;
+}
+
+.search-container {
+    float: right;
+    background-color: none;
+}
+
+input {
+    padding: 0;
+    width: 130px;
+    height: 25px;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+.search-container
+/*.topbutt */
+
+{
+    float: right;
+    /*padding: 6px 10px;*/
+    /*margin-top: 8px;*/
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border-style: solid;
+    border-color: lightgrey;
+    cursor: pointer;
+}
+
+.topnav .search-container
+/*.topbutt */
+
+:hover {
+    background-color: #ccc;
+    position: fixed;
+}
+
+#clicked:focus,
+#popup:focus {
+    outline: none;
+}
+
+nav #masterhead {
+    display: block;
+    margin-left: auto;
+    width: 100%
+}
+
+ul,
+.search-container {
+    display: inline-block;
+}
+
+.search-container {
+    margin-top: 6.5px;
+}
+
+h1 {
+    color: maroon;
+    display: inline-flex;
+    margin-left: 400px;
+    text-align: center;
+    text-shadow: 2px 2px #ff0000;
+}

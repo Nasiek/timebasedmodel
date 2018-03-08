@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="modal.css">
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <title>timed modal popup</title>
+</head>
+
+<body>
+    <section class="first-section">
+        <div class="wrap">
+            <header id="masterhead">
+                <nav>
+                    <ul class="list">
+                        <li class="item1"><a href="">What We Do</a></li>
+                        <li class="item2"><a href="">Who We Are</a></li>
+                        <li class="item3"><a href="">Projects</a></li>
+                        <li class="item4"><a href="">Careers</a></li>
+                    </ul>
+                    <div class="search-container">
+                        <!--<form action="/action_page.php"> -->
+                        <input type="text" placeholder="Enter your query here:" name="search" id="clicked" onclick="setTimeout(myFunction, 3000)"></input>
+                        <!-- <input type="text" placeholder="Search.." name="search"> -->
+                        <!--<button id="topbutt" type="submit"><i class="fas.fa-user-"></i>
+                            </button> -->
+                    </div>
+                </nav>
+                <div class="name">
+                    <h1 class="company-name">
+                    Ministry of Municipality and Urban Planning
+                  </h1>
+                </div>
+            </header>
+        </div>
+        <div class="video-background">
+            <div class="video-foreground">
+                <iframe width="1300" height="517" src="https://www.youtube.com/embed/zG3ghj_nOwQ?controls=0&showinfor=0&rel=0&autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <!--<button id="clicker" onclick="setTimeout(myFunction, 3000)">Try it</button> -->
+            <!--<input type="text" placeholder="Search.." name="search" id="clicked" onclick="setTimeout(myFunction, 3000)"></input> -->
+            <!--<button id="clicks" onclick="setTimeout("-->
+            <div class="auto-pop-main">
+                <div id="autopop-inner" onclick="document.getElementById('autopop-inner').style.display='none'">
+                    <p class="text">
+                        Our site is still in Beta. <strong>Do not</strong> enter your credit-card information if prompted. Click this box to proceed.
+                    </p>
+                </div>
+            </div>
+            <!-- <script type="text/javascript">
+            var pop;
+
+            function myFunction() {
+                pop = setTimeout(alertFunc, 3000);
+            }
+
+            function alertFunc() {
+                alert("Hello!");
+            }
+            </script> -->
+            <script type="text/javascript">
+            var popping = document.getElementById('autopop-inner');
+
+            function change() {
+                popping.style.display = "block";
+            }
+            set = setTimeout(change, 3000);
+            set;
+
+            window.onclick = function(event) {
+                if (event.target == popping) {
+                    popping.style.display = "none";
+                }
+            }
+            </script>
+            <script>
+            function myFunction() {
+                alert("This search bar doesn't actually work! I'm still learning how to code!");
+            }
+            </script>
+</body>
+
+</html>
