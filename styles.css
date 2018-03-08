@@ -86,12 +86,47 @@ input {
   cursor: pointer;
 }
 
-button {
-  width: auto;
-  height: 30px;
+#popup {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  cursor: pointer;
 }
+
+.modal:focus, #popup:focus {
+  outline: none;
+}
+
+button:hover, #popup:hover {
+  background: #fff;
+  color: #222;
+}
+
+.modal {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0,4);
+}
+
+.modal-inner {
+  border: 8px solid #ccc;
+  margin: auto;
+  padding: 20px;
+  width: 60%;
+}
+
+
 .topnav .search-container button:hover {
-  background: #ccc;
+  background-color: #ccc;
   position: fixed;
 }
 #modal{
@@ -99,5 +134,5 @@ button {
   background-color: grey;
   width: 100px;
   height: 50px;
-  
+
 }
