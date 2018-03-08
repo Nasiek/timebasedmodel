@@ -33,19 +33,40 @@
             <div class="video-foreground">
                 <iframe width="1300" height="517" src="https://www.youtube.com/embed/zG3ghj_nOwQ?controls=0&showinfor=0&rel=0&autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
-            <div id="modal">
-                <p>Hello this is a modal!</p>
+            <!-- Modal placement -->
+            <div class="wrap">
+                <button id="popup">Hey! How can we help you?</button>
+                <div id="modal" class="modal">
+                    <div class="innermodal">
+                        <span class="close">&times;</span>
+                        <p>We at Philadelphia Road Solutions love feedback and are eager to talk with you about your transit related needs. Send us an <a href="mailto:keisangittens@gmail.com">email</a>, <a href="https://www.linkedin.com/in/keisan-gittens-02978437">follow us</a>, or <a href="">join our mailing list</a> to get in contact with us. You can also just send us a direct message below!</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <script type="text/javascript">
-        
-        var modal = document.getElementbyID('modal');
-        function change(){
-            modal.style.display = "block";
-        }
-        setTimeOut(change,3000);
-        </script>
+            
+            <script type="text/javascript">
+            var jsmodal = document.getElementbyId(""modal");
+            var butt = document.getElementbyId("popup");
+            var inline = document.getElementbyId("close")[0];
 
+            butt.onclick = function() {
+                jsmodal.style.display = "block";
+            }
+            inline.onclick = function() {
+                jsmodal.style.display = "none"
+            }
+
+            window.onclick = function(event)
+ {
+    if (event.target == jsmodal) {
+        jsmodal.style.display = "none";
+    }
+ }
+            function change() {
+                modal.style.display = "block";
+            }
+            setTimeOut(change, 3000);
+            </script>
 </body>
 
 </html>
